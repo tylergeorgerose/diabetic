@@ -1,2 +1,6 @@
+# jupyter
 **/.ipynb_checkpoints
+# pickles (too large)
 results/*.pkl
+# old unused results
+results/xgb_es_*
