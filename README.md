@@ -20,7 +20,7 @@ Diabetes has a profound impact on many Americans, despite our understanding of r
 *Overview*\
 The dataset used for prediction is a subsample of the 2015 CDC Behavioral Risk Factor Surveillance Survey (BRFSS), consisting of 21 features (described below) and a binary indicator of an individual being nondiabetic or (pre-)diabetic for 253,680 individuals. 
 
-*Features*
+*Features*\
 Our feature matrix consists of 21 unique features.
 * HighBP: a binary indicator of whether an individual has high blood pressure (1) or not (0)
 * HighChol: a binary indicator of whether an individual has high cholesterol (1) or not (0)
@@ -91,7 +91,7 @@ Relevant source code: Exploratory data analysis\
 2. Model training and evaluation
 Can a machine learning model learn from this data? Four models (below) were trained and evaluated on F1 score. 4-fold cross-validation was used to tune select hyperparameters through a grid search for each model before evaluation on a held-out test set (20% of data) for five random stratified splits. Confusion matrices for each model were inspected and test performance was compared.\
 | Algorithm | Hyperparameters Tuned | Other Notes |
-|-----------|-----------------|-------------|
+|-----------|-----------------------|-------------|
 | Logistic Regression | C, L1 Ratio | Elastic Net regularization |
 | Random Forest | max features, max depth | N/A |
 | Decision Tree | max features, max depth | N/A |
