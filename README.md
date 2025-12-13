@@ -84,11 +84,11 @@ Our feature matrix consists of 21 unique features.
 
 # The pipeline
 The machine learning pipeline developed consists of three major phases.
-1. Exploratory data analysis
+1. *Exploratory data analysis*\
 How are features distributed in the dataset? Are there any obvious correlations within the features/target variable?\
 Relevant figures: age.png, bmi.png, feature_corr.png, health.png, stroke.png, target_corr.png, target.png\
 Relevant source code: Exploratory data analysis\
-2. Model training and evaluation
+2. *Model training and evaluation*\
 Can a machine learning model learn from this data? Four models (below) were trained and evaluated on F1 score. 4-fold cross-validation was used to tune select hyperparameters through a grid search for each model before evaluation on a held-out test set (20% of data) for five random stratified splits. Confusion matrices for each model were inspected and test performance was compared.\
 
 | Algorithm | Hyperparameters Tuned | Other Notes |
@@ -100,7 +100,7 @@ Can a machine learning model learn from this data? Four models (below) were trai
 
 Relevant figures: confusion_matrix.png, cv_test_scores.png\
 Relevant source code: Model training, model evaluation\
-3. Interpretation
+3. *Interpretation*\
 What has our best-performing model learned? Internal global importance measures and Global SHapley Additive exPlanation (SHAP) were calculated to demonstrate how each feature is associated with the model's prediction. For four randomly selected points, local feature importances are calculated and compared.\
 Relevant figures: global_shap_1percent.png, shap_{0-4}.png, xgb_feature_importances.png\
 Relevant source code: Interpretation\
