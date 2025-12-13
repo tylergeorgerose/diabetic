@@ -90,12 +90,14 @@ Relevant figures: age.png, bmi.png, feature_corr.png, health.png, stroke.png, ta
 Relevant source code: Exploratory data analysis\
 2. Model training and evaluation
 Can a machine learning model learn from this data? Four models (below) were trained and evaluated on F1 score. 4-fold cross-validation was used to tune select hyperparameters through a grid search for each model before evaluation on a held-out test set (20% of data) for five random stratified splits. Confusion matrices for each model were inspected and test performance was compared.\
+
 | Algorithm | Hyperparameters Tuned | Other Notes |
-|-----------|-----------------------|-------------|
+------------|-----------------------|-------------
 | Logistic Regression | C, L1 Ratio | Elastic Net regularization |
 | Random Forest | max features, max depth | N/A |
 | Decision Tree | max features, max depth | N/A |
 | XGBoost | max depth, L1/L2 regularization | 50 early stopping rounds,  $\frac{2}{3}$ of rows and $\frac{9}{10}$ of columns per tree, learning rate 0.03 |
+
 Relevant figures: confusion_matrix.png, cv_test_scores.png\
 Relevant source code: Model training, model evaluation\
 3. Interpretation
